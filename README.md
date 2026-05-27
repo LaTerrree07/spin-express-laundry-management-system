@@ -1,58 +1,60 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Spin Express: Laundry Management System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Spin Express Laundry Management System is a database-driven system developed for Spin Express Laundry Shop, a laundry business located in Bucana, Sandawa Phase 2, Davao City.
 
-## About Laravel
+The system was created to help the shop record customer transactions, monitor laundry orders, track payments, and reduce confusion when handling multiple customer loads. It focuses on making the shop’s daily laundry process more organized, accurate, and easier to manage.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Project Purpose
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+The main purpose of this system is to improve the recording and monitoring of laundry transactions. Instead of relying on memory or manual checking, staff can use the system to track customer orders, service types, laundry weight, number of loads, payment status, and laundry order status.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Key Features
 
-## Learning Laravel
+- Customer record management
+- Laundry transaction recording
+- Service category and service type management
+- Laundry weight and number of loads tracking
+- Automatic handling of the 6-kilogram maximum wash load rule
+- Extra item recording for detergent and softener
+- Payment recording for Cash and GCash
+- Laundry status monitoring
+- Admin and staff-based system access
+- Clean dashboard and sidebar interface
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## System Scope
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+The system covers the basic operations needed by Spin Express Laundry Shop, including:
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+- Customer information
+- Service type selection
+- Laundry weight and load count
+- Payment details
+- Laundry order status
+- Optional extra items
 
-## Agentic Development
+The system does not include delivery services, online reservations, inventory management, payroll, or financial report generation.
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+## Business Rule Highlight
 
-```bash
-composer require laravel/boost --dev
+One wash load must not exceed 6 kilograms. If the laundry weight is more than 6 kilograms, the system records it as multiple loads to keep the transaction accurate.
 
-php artisan boost:install
-```
+## Main Modules
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+- Customers
+- Service Categories
+- Service Types
+- Staff
+- Status
+- Transactions
+- Payments
+- Extra Items
+- Transaction Extra Items
 
-## Contributing
+## Technology Used
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- Laravel
+- Laravel Breeze
+- Blade
+- MySQL
+- PHP
+- HTML, CSS, and JavaScript
